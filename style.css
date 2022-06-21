@@ -41,7 +41,6 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin: 2rem;
-  font-size: 1rem;
 }
 .navbar .btn:hover {
   background-color: white;
@@ -65,19 +64,15 @@ body {
   padding: 2rem 0;
 }
 .home .container .row .content h1 {
-  font-size: 2.6rem;
   font-weight: bolder;
 }
 .home .container .row .content p {
-  font-size: 0.75rem;
   font-weight: lighter;
 }
 .home .container .row .column {
   padding: 1rem 0;
 }
-.home .container .row .column h2 {
-  font-size: 1.5rem;
-}
+
 .home .container .row .column .price {
   padding: 0.7rem 0;
   display: grid;
@@ -93,14 +88,11 @@ body {
   padding-bottom: 1em;
 }
 .home .container .row .column .price .element .main h4 {
-  font-size: 1rem;
   font-weight: 400;
 }
 .home .container .row .column .price .element .main h5 {
-  font-size: 1.2rem;
 }
 .home .container .row .column p {
-  font-size: 1rem;
   font-weight: lighter;
 }
 .home .container .row .btn {
@@ -115,8 +107,8 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-  body {
-    font-size: 62%;
+  h2 {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 768px) {
