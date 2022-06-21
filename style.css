@@ -9,7 +9,7 @@
   text-decoration: none;
 }
 body {
-  background: linear-gradient(to right, rgb(2, 2, 119), rgb(91, 91, 94));
+  background: linear-gradient(to right, rgb(1, 1, 94), rgb(124, 124, 134));
 }
 .header {
   display: flex;
@@ -108,7 +108,7 @@ body {
 
 @media screen and (max-width: 991px) {
   h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
