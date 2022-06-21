@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;400;600&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  font-family: "Anek Malayalam", sans-serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+body {
+  background: linear-gradient(to right, rgb(2, 2, 119), rgb(91, 91, 94));
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  z-index: 10000;
+}
+.logo {
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.navbar {
+  padding-right: 2rem;
+}
+.navbar a {
+  padding: 0.5rem;
+  color: white;
+}
+.navbar a:hover {
+  color: rgb(2, 2, 39);
+}
+.navbar .btn {
+  background: none;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  border-color: white;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 2rem;
+  font-size: 1rem;
+}
+.navbar .btn:hover {
+  background-color: white;
+  color: blue;
+}
+#close-btn,
+#bar-btn {
+  display: none;
+}
+
+.home .container {
+  display: flex;
+  /* justify-content: space-between; */
+  box-sizing: border-box;
+  color: white;
+}
+.home .container .row {
+  padding: 3.5rem 10rem;
+}
+.home .container .row .content {
+  padding: 2rem 0;
+}
+.home .container .row .content h1 {
+  font-size: 2.6rem;
+  font-weight: bolder;
+}
+.home .container .row .content p {
+  font-size: 0.75rem;
+  font-weight: lighter;
+}
+.home .container .row .column {
+  padding: 1rem 0;
+}
+.home .container .row .column h2 {
+  font-size: 1.5rem;
+}
+.home .container .row .column .price {
+  padding: 0.7rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.75rem;
+}
+.home .container .row .column .price .element {
+  background-color: rgb(57, 57, 182);
+  text-align: center;
+  padding: 0.25rem;
+}
+.home .container .row .column .price .element .main {
+  padding-bottom: 1em;
+}
+.home .container .row .column .price .element .main h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.home .container .row .column .price .element .main h5 {
+  font-size: 1.2rem;
+}
+.home .container .row .column p {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.home .container .row .btn {
+  padding: 0.5rem 2.5rem;
+  border-radius: 15px;
+  background: none;
+  border: 0.15rem solid white;
+  color: white;
+}
+.home .container .image {
+  margin: 6rem 0;
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    font-size: 62%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .logo {
+    padding-left: 4rem;
+    padding-top: 2rem;
+    cursor: pointer;
+  }
+  .navbar .icon {
+    margin-bottom: 2rem;
+  }
+  #close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+  }
+  #close-btn:hover {
+    color: rgb(2, 2, 39);
+  }
+  .navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    inset: 0 0 0 35%;
+    background-color: blue;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .navbar a {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  #bar-btn {
+    font-size: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+  }
+  #bar-btn:hover {
+    color: rgb(2, 2, 39);
+  }
+  .navbar .btn {
+    margin: 2rem;
+    width: 100%;
+  }
+  .navbar .btn:hover {
+    background-color: white;
+    color: blue;
+  }
+
+  #close-btn,
+  #bar-btn {
+    display: block;
+    color: white;
+  }
+  .home .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+  h5 {
+    font-size: 0.5rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+  }
+  .home .container .image img {
+    height: 200px;
+    width: 150px;
+    align-items: center;
+  }
+}
